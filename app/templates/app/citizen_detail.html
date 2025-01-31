@@ -1,0 +1,11 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+
+        <div class="post-entry">
+            <h2><a href=" ">{{post.title}}</a></h2>
+            <p>{{citizen.content}}</p>
+        </div>
+       <a href ="{% url 'citizen_update' citizen.pk %}">+ Edit </a>
+       <a href ="{% url 'citizen_delete' citizen.pk %}">- Delete </a>
+{% endblock content %}

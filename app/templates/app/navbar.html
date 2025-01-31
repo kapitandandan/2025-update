@@ -1,5 +1,31 @@
-<header> 
-    <a href= "{% url 'home' %}">Home</a> 
-    <a href= "{% url 'about' %}">About</a> 
-    <a href= "{% url 'blog' %}">Blog</a> 
-</header>
+{% load static %}
+
+
+<nav>
+    <ul>
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'about' %}">About</a></li>
+      <li>
+        <a href="#0">Concerns&dtrif;</a>
+        <ul>
+          <li><a href="{% url 'blog' %}">Complaints</a></li>
+          <li><a href="#0">Southwest Airlines</a></li>
+          <li><a href="#0">Levi Strauss</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#0">Services&dtrif;</a>
+        <ul>
+          <li><a href="#0">Print Design</a></li>
+          <li><a href="#0">Web Design</a></li>
+          <li><a href="#0">Mobile App Development</a></li>
+        </ul>
+      </li>
+      <li><a href="#0">Contact</a></li>
+      <li><a href="{% url 'login' %}">login</a></li>
+      <li><a href="{% url 'signup' %}">Signup</a></li>
+    </ul>
+  </nav>
+
+{% block content %}
+{% endblock %}

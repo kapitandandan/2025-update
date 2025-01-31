@@ -1,8 +1,19 @@
 {% extends 'app/base.html' %}
 {% load static %}
-{% block content %}
 
-        <h1>Hello World</h1>
-<img class="mylogo" src="{% static 'images/logo.png' %}">
+{% block content %}
+<img src="{% static 'images/bg1.png' %}"class="image">
+
+        <div class="hero-section">
+                <!-- Overlay Text -->
+                <h1 class="hero-text">Welcome to Bacoor Cares</h1>
+                <p> "Knowing that you have someone to reach out is a great thing." <br>
+                        <br>
+                        <br>
+                <a href="{% url 'about' %}" class="custom-button">Learn More</a>
+                         
+                         
+            </div>
+        
 
 {% endblock content %}
